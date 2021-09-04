@@ -674,7 +674,7 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hero-section {
-    padding-top: 80px;
+    padding-top: 75px;
   }
 }
 
@@ -893,7 +893,7 @@ background: -webkit-linear-gradient(226.07deg, #f56976 14.22%, #a3212d 47.19%, #
   .about-section {
   position: relative;
   z-index: 1;
-  padding-top: 10px;
+  padding-top: 15px;
   margin-top: 0px;
 }
 }
