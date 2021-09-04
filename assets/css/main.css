@@ -108,7 +108,7 @@ h2 {
 }
 @media (max-width: 767px) {
 .logo-h2-mobile{
-    font-size: 41px;
+    font-size: 38px;
 }
 }
 @media (max-width: 767px) {
@@ -2313,12 +2313,12 @@ only screen and (min-width:992px) and (max-width:1199px) {
   transition: all 0.3s ease-out 0s;
 }
 .filterbybtns{
-    border: 2px solid #606EFF;
-    background: transparent;
+    border: 2px solid #606EFF!important;
+    background: transparent!important;
   
 }
 .filterbybtns-text{
-background: -webkit-linear-gradient(226.07deg, #1DD4F1 11.22%, #5786F1 45.19%, #7F52F1 90.67%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+background: -webkit-linear-gradient(226.07deg, #1DD4F1 11.22%, #5786F1 45.19%, #7F52F1 90.67%)!important;
+  -webkit-background-clip: text!important;
+  -webkit-text-fill-color: transparent!important;
 }
