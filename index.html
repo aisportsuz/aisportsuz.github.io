@@ -152,11 +152,11 @@
 				<h3 class="" style="font-size: 30px;">LIVE Matches </h3>
 			</div>
 			<div class="col-6 pb-4 hidden-xs" style="text-align: right;">
-				<h4 class=""><small>Filter by</small> <a class="main-btn btn-hover border-btn py-2 sortbybtn_x ms-3 sortby"><i class="lni toggleclose-clubs"></i> Clubs</a> <a class="main-btn btn-hover border-btn py-2 sortbybtn_x ms-2 sortbydate"><i class="lni toggleclose-date"></i> Matchday</a> <a href="" class="main-btn btn-hover border-btn py-2 sortbybtn_x ms-2 sortbylive"><i class="lni toggleclose-live"></i> LIVE</a> </h4>
+				<h4 class=""><small>Filter by</small> <a class="main-btn btn-hover border-btn py-2 sortbybtn_x ms-3 sortby"><i class="lni toggleclose-clubs fa"></i> Clubs</a> <a class="main-btn btn-hover border-btn py-2 sortbybtn_x ms-2 sortbydate"><i class="lni toggleclose-date fa"></i> Matchday</a> <a href="" class="main-btn btn-hover border-btn py-2 sortbybtn_x ms-2 sortbylive"><i class="lni toggleclose-live"></i> LIVE</a> </h4>
 			</div>
 			<div class="hidden-lg mx-auto p-3" style="overflow-x: scroll; white-space: nowrap;">
-					<h4>Filter by <a class="main-btn btn-hover border-btn py-2 px-4 me-2 ms-3 mx-auto sortbybtn_x sortby"><i class="lni toggleclose-clubs"></i> Clubs</a> 
-					<a class="main-btn btn-hover border-btn py-2 px-4 me-2 mx-auto sortbybtn_x sortbydate"><i class="lni toggleclose-date"></i> Matchday</a> 
+					<h4>Filter by <a class="main-btn btn-hover border-btn py-2 px-4 me-2 ms-3 mx-auto sortbybtn_x sortby"><i class="lni toggleclose-clubs fa"></i> Clubs</a> 
+					<a class="main-btn btn-hover border-btn py-2 px-4 me-2 mx-auto sortbybtn_x sortbydate"><i class="lni toggleclose-date fa"></i> Matchday</a> 
 					<a href="" class="main-btn btn-hover border-btn py-2 px-4 me-2 mx-auto sortbybtn_x sortbylive"><i class="lni toggleclose-live"></i> LIVE</a> 
 					</h4>
 			</div>
@@ -658,12 +658,12 @@
     jQuery('.sortby').on('click', function() {
     jQuery('.sortbydiv').slideToggle( "slow" );
     jQuery('.sortby').toggleClass('btn-hovered');
-    jQuery('.toggleclose-clubs').toggleClass('lni-close');
+    jQuery('.toggleclose-clubs').toggleClass('fa-close');
 
-    if ($(".toggleclose-date").hasClass("lni-close")) {
+    if ($(".toggleclose-date").hasClass("fa-close")) {
   		jQuery('.sortbydiv-date').slideToggle( "slow" );
     jQuery('.sortbydate').toggleClass('btn-hovered');
-    jQuery('.toggleclose-date').toggleClass('lni-close');
+    jQuery('.toggleclose-date').toggleClass('fa-close');
 	}
 	});
 
@@ -673,11 +673,11 @@
     jQuery('.sortbydate').on('click', function() {
     jQuery('.sortbydiv-date').slideToggle( "slow" );
     jQuery('.sortbydate').toggleClass('btn-hovered');
-    jQuery('.toggleclose-date').toggleClass('lni-close');
-    if ($(".toggleclose-clubs").hasClass("lni-close")) {
+    jQuery('.toggleclose-date').toggleClass('fa-close');
+    if ($(".toggleclose-clubs").hasClass("fa-close")) {
   		jQuery('.sortbydiv').slideToggle( "slow" );
     jQuery('.sortby').toggleClass('btn-hovered');
-    jQuery('.toggleclose-clubs').toggleClass('lni-close');
+    jQuery('.toggleclose-clubs').toggleClass('fa-close');
 	}
 	});
 
