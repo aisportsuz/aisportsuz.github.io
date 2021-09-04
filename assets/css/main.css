@@ -2286,14 +2286,10 @@ only screen and (min-width:992px) and (max-width:1199px) {
 .pl{
     background-color: #e90052;
 }
-.header-mobile{
+.header-mobile-my{
     z-index: 100!important;
     height: auto;
-    background-color: #fff;
 
 }
-.header-mobile .header-mobile-btn{
-    font-size: 30px;
-border-radius: 50%;
-width: 60px;
+.header-mobile-my .header-mobile-btn{
 }
