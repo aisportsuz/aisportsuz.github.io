@@ -694,7 +694,7 @@ p {
 @media (max-width: 767px) {
   .hero-wrapper {
     margin: 0 20px;
-     height: 150px!important;
+     height: 200px!important;
 
   }
 }
@@ -702,6 +702,7 @@ p {
 @media only screen and (min-width: 550px) and (max-width: 767px) {
   .hero-wrapper {
     margin: 0 40px;
+    height: 200px!important;
   }
 }
 
