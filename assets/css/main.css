@@ -694,7 +694,7 @@ p {
 @media (max-width: 767px) {
   .hero-wrapper {
     margin: 0 20px;
-     height: 200px!important;
+     height: 150px!important;
 
   }
 }
@@ -746,13 +746,13 @@ p {
 
 @media (max-width: 767px) {
   .hero-wrapper .hero-content h1 {
-    font-size: 36px;
+    font-size: 25px;
   }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 767px) {
   .hero-wrapper .hero-content h1 {
-    font-size: 45px;
+    font-size: 25px;
   }
 }
 
@@ -784,7 +784,7 @@ p {
     max-width: 110%;
     margin: auto;
     position: absolute;
-    bottom: 0;
+    bottom: -40%;
     left: 0;
     filter: opacity(0.15);
     background-position: center;
@@ -873,6 +873,15 @@ background: -webkit-linear-gradient(226.07deg, #f56976 14.22%, #a3212d 47.19%, #
   position: relative;
   z-index: 1;
   padding-top: 50px;
+  margin-top: 20px;
+}
+@media (orientation: portrait) {
+  .about-section {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+  margin-top: 0px;
+}
 }
 .dropdown-sort{
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
