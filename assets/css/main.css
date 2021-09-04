@@ -785,7 +785,7 @@ p {
     max-width: 110%;
     margin: auto;
     position: absolute;
-    bottom: -40%;
+    bottom: -30%;
     left: 0;
     filter: opacity(0.15);
     background-position: center;
@@ -2267,17 +2267,37 @@ only screen and (min-width:992px) and (max-width:1199px) {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hidden-xs{
-    display: none;
+    display: none!important;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .hidden-xs::after{
+    display: none!important;
 }
 }
 .hidden-lg{
-    display: none;
+    display: none!important;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hidden-lg{
-    display: unset;
+    display: unset!important;
 }
 }
 .pl{
     background-color: #e90052;
+}
+.header-mobile{
+    position: fixed;
+    z-index: 100!important;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+
+}
+.header-mobile .header-mobile-btn{
+    font-size: 30px;
+border-radius: 50%;
+width: 60px;
 }
