@@ -106,7 +106,11 @@ h2 {
     font-size: 36px;
   }
 }
-
+@media (max-width: 767px) {
+.logo-h2-mobile{
+    font-size: 41px;
+}
+}
 @media (max-width: 767px) {
   .section-title h2 {
     font-size: 36px;
@@ -889,7 +893,7 @@ background: -webkit-linear-gradient(226.07deg, #f56976 14.22%, #a3212d 47.19%, #
   .about-section {
   position: relative;
   z-index: 1;
-  padding-top: 50px;
+  padding-top: 30px;
   margin-top: 0px;
 }
 }
@@ -2307,4 +2311,14 @@ only screen and (min-width:992px) and (max-width:1199px) {
   border-radius: 10px;
   opacity: 0;
   transition: all 0.3s ease-out 0s;
+}
+.filterbybtns{
+    border: 2px solid #606EFF;
+    background: transparent;
+  
+}
+.filterbybtns-text{
+background: -webkit-linear-gradient(226.07deg, #1DD4F1 11.22%, #5786F1 45.19%, #7F52F1 90.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
