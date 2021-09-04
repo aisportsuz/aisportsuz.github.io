@@ -694,7 +694,7 @@ p {
 @media (max-width: 767px) {
   .hero-wrapper {
     margin: 0 20px;
-     height: 400px!important;
+     height: 200px!important;
 
   }
 }
@@ -886,11 +886,6 @@ background: -webkit-linear-gradient(226.07deg, #f56976 14.22%, #a3212d 47.19%, #
 }
 .no-border{
     border-style: none;
-}
-@media (orientation: portrait) {
-  .dropdown-sort{
-   margin-left: 15px;
-  }
 }
 .ttx-1{
     transform: translateY(1px);
