@@ -2287,11 +2287,8 @@ only screen and (min-width:992px) and (max-width:1199px) {
     background-color: #e90052;
 }
 .header-mobile{
-    position: fixed;
     z-index: 100!important;
-    bottom: 0;
     height: auto;
-    width: 100%;
     background-color: #fff;
 
 }
