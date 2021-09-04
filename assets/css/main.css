@@ -893,7 +893,7 @@ background: -webkit-linear-gradient(226.07deg, #f56976 14.22%, #a3212d 47.19%, #
   .about-section {
   position: relative;
   z-index: 1;
-  padding-top: 30px;
+  padding-top: 10px;
   margin-top: 0px;
 }
 }
