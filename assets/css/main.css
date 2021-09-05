@@ -198,9 +198,7 @@ p {
   overflow: hidden;
 }
 .gradient-txt-my{
-  background-image: linear-gradient(231.43deg, #7F52F1 10.7%, #5786F1 46.47%, #7F52F1 86.05%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #7F52F1;
 }
 .active-bottom-header{
     border-top-style: solid;
