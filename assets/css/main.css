@@ -705,7 +705,7 @@ p {
 @media (max-width: 767px) {
   .hero-wrapper {
     margin: 0 20px;
-     height: 205px!important;
+     height: 195px!important;
 
   }
 }
@@ -713,7 +713,7 @@ p {
 @media only screen and (min-width: 550px) and (max-width: 767px) {
   .hero-wrapper {
     margin: 0 40px;
-    height: 205px!important;
+    height: 195px!important;
   }
 }
 
@@ -727,15 +727,7 @@ p {
   z-index: -1;
   opacity: .3;
 }
-.hero-wrapper1::after{
-    background-color: #b3d1ff;
-}
-.hero-wrapper2::after{
-    background-color: #b3d1ff;
-}
-.hero-wrapper3::after{
-    background-color: #b3d1ff;
-}
+
 /*.hero-wrapper1::after{
     background-image: linear-gradient(226.07deg, #7F52F1 14.22%, #5786F1 47.19%, #1DD4F1 83.67%);
     transition: all 0.3s ease-out 0s;
@@ -748,6 +740,14 @@ p {
     background-image: linear-gradient(226.07deg, #1DD4F1 14.22%, #7F52F1 47.19%, #5786F1 83.67%);
     transition: all 0.3s ease-out 0s;
 }*/
+.hero-wrapper1::after{
+    background-color: #b3d1ff;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .hero-wrapper1::after{
+    background-color: rgba(0,0,0,0.9);
+}
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hero-wrapper {
     height: auto;
@@ -767,16 +767,55 @@ p {
 
 @media (max-width: 767px) {
   .hero-wrapper .hero-content h1 {
-    font-size: 25px;
+    font-size: 20px;
+    color: rgba(250,250,250,1);
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    width: 80%;
   }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 767px) {
   .hero-wrapper .hero-content h1 {
-    font-size: 25px;
+    font-size: 20px;
+    color: rgba(250,250,250,1);
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    width: 80%;
   }
 }
+.hero-wrapper .hero-content .top-news-category{
+    display: none
+}
+@media (max-width: 767px) {
+  .hero-wrapper .hero-content .top-news-category{
+    display: unset;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: rgb(250,250,250);
+    background-color: rgba(0,0,0,0.7);
+    letter-spacing: 0.5px;
+    border-radius: 15px;
+    line-height: 150%;
+}
+}
 
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+  .hero-wrapper .hero-content .top-news-category{
+    display: unset;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: rgb(250,250,250);
+    background-color: rgba(0,0,0,0.7);
+    letter-spacing: 0.5px;
+    border-radius: 15px;
+    line-height: 150%;
+}
+}
 .hero-wrapper .hero-content p {
   margin-bottom: 30px;
   font-size: 18px;
@@ -802,14 +841,15 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hero-wrapper .hero-image img {
-    max-width: 110%;
+    max-width: 100%;
+    height: 100%;
     margin: auto;
     position: absolute;
-    bottom: -30%;
+    top: 0;
     left: 0;
-    filter: opacity(0.20);
-    z-index: -10!important;
+    z-index: -10;
     background-position: center;
+    background-size: cover;
 
   }
 }
@@ -2062,12 +2102,12 @@ only screen and (min-width:992px) and (max-width:1199px) {
   max-width: 100%
 }
 .gradient-txt{
- background: -webkit-linear-gradient(226.07deg, #7F52F1 14.22%, #5786F1 47.19%, #1DD4F1 83.67%);
+ background: -webkit-linear-gradient(226.07deg, #3658bf 14.22%, #4169e1 47.19%, #3658bf 83.67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient-txt-logo{
-    color: #5D8AA8!important;
+    color: #4169e1!important;
 }
 .gradient-txt1{
  background-image: linear-gradient(231.43deg, #5786F1 10.7%, #1DD4F1 46.47%, #7F52F1 86.05%);
@@ -2093,7 +2133,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
 .slider-active .slick-dots {
   position: absolute;
   left: 0;
-  bottom: 20px;
+  bottom: 5px;
   width: 100%;
   text-align: center; }
   .slider-active .slick-dots li {
@@ -2103,7 +2143,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
       width: 12px;
       height: 12px;
       background: none;
-      background-color: rgba(96, 110, 255, 0.6);
+      background-color: rgba(0,0,0, 0.25);
       border-radius: 50px;
       font-size: 0;
       -webkit-transition: all 0.3s ease-out 0s;
@@ -2113,8 +2153,8 @@ only screen and (min-width:992px) and (max-width:1199px) {
       transition: all 0.3s ease-out 0s;
       border: 0; }
     .slider-active .slick-dots li.slick-active button {
-      background-color: #606eff;
-      border-color: #eceff8;
+      background-color: rgba(0,0,0, 0.45);
+      border-color: rgba(0,0,0, 0.45);
       width: 37px; }
 
 
@@ -2273,9 +2313,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
 }
 .card .features .included{
     opacity: 1!important;
-     background: -webkit-linear-gradient(226.07deg, #7F52F1 14.22%, #5786F1 47.19%, #7F52F1 83.67%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    color: #4169e1;
 }
 .border{
     border-style: solid;
