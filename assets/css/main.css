@@ -807,7 +807,8 @@ p {
     position: absolute;
     bottom: -30%;
     left: 0;
-    filter: opacity(0.15);
+    filter: opacity(0.20);
+    z-index: -10!important;
     background-position: center;
 
   }
@@ -2322,6 +2323,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
 .filterbybtns{
     border: 2px solid #606EFF!important;
     background: transparent!important;
+    font-size: 16px;
   
 }
 .filterbybtns-text{
