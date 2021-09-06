@@ -2337,6 +2337,28 @@ only screen and (min-width:992px) and (max-width:1199px) {
    transform: rotateZ(8deg) translateY(2.5px);
 }
 
+
+/*========== upcoming events ==========*/
+.card-small{
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border-style: none;
+    border-radius: 5px;
+}
+.card-small-club_logo{
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: contain!important;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+}
+.line-height-100{
+    line-height: 100%;
+}
+/*========== /upcoming events end ==========*/
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hidden-xs{
     display: none!important;
@@ -2357,6 +2379,9 @@ only screen and (min-width:992px) and (max-width:1199px) {
 }
 .pl{
     background-color: #e90052;
+}
+.pl-txt{
+    color: #e90052;
 }
 .header-mobile-my{
     z-index: 100!important;
