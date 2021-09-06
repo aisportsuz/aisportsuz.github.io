@@ -2514,6 +2514,12 @@ letter-spacing: 1px;
     border-radius: 15px;
     line-height: 150%;
 }
+.latest-news-share{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: rgb(190,190,190);
+}
 .play-video{
     position: absolute;
     top: 15px;
