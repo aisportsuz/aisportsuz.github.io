@@ -2394,14 +2394,14 @@ letter-spacing: 1px;
 .news-section{
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 15px;
     height: 200px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
     .news-section{
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 15px;
     height: 185px;
 }
 }
