@@ -12,7 +12,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+*::-webkit-scrollbar {
+  display: none!important;
+}
 body {
   font-family: dm sans, sans-serif;
   font-weight: 400;
@@ -2388,15 +2390,7 @@ letter-spacing: 1px;
     color: #fff;
   
 }
-.scrollbar-no::-webkit-scrollbar {
-  display: none!important;
-}
-.row::-webkit-scrollbar {
-  display: none!important;
-}
-.container::-webkit-scrollbar {
-  display: none!important;
-}
+
 .news-section{
     position: relative;
     overflow: hidden;
