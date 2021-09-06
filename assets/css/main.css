@@ -2382,6 +2382,11 @@ letter-spacing: 1px;
   
 }
 .scrollbar-no::-webkit-scrollbar {
-  width: 0px!important;
-  height: 0px!important;
+  display: none!important;
+}
+.row::-webkit-scrollbar {
+  display: none!important;
+}
+.container::-webkit-scrollbar {
+  display: none!important;
 }
