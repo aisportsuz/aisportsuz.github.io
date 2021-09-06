@@ -2313,6 +2313,26 @@ only screen and (min-width:992px) and (max-width:1199px) {
     height: 75px;
     border-style: none;
 }
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+    .card .team_logo{
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: contain!important;
+    width: 65px;
+    height: 65px;
+    border-style: none;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+    .card .team_logo{
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: contain!important;
+    width: 65px;
+    height: 65px;
+    border-style: none;
+}
+}
 .club_title{
     border-style: solid; position: absolute;
     max-width: 120px;
