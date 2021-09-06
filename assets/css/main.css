@@ -2546,3 +2546,10 @@ letter-spacing: 1px;
     font-size: 16px;
     color: #fff;
 }
+.mytxt{
+    color: #4169e1;
+    letter-spacing: 0.5px;
+}
+.text-right{
+    text-align: right;
+}
