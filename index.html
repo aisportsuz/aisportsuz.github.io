@@ -91,32 +91,32 @@
     	<div class="row  px-1 border-top">
     		<div class="col text-center px-auto mx-auto">
     			<a href="#home" class="text-dark">
-    				<i class="lni lni-ticket-alt gradient-txt-my pt-2" style="font-size: 21px;"></i>
-    				<span class="gradient-txt-my" style="font-size: 14px; transform: translateY(-2px);">Latest</span>
+    				<i class="lni lni-ticket-alt gradient-txt-my pt-2"></i>
+    				<span class="gradient-txt-my">Latest</span>
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
     			<a href="" class="text-dark">
-    				<i class="lni lni-bar-chart text-dark o5 pt-2" style="font-size: 21px;"></i>
-    				<span class="text-dark o5" style="font-size: 14px; transform: translateY(-2px);">Stats</span>
+    				<i class="lni lni-bar-chart text-dark o5 pt-2"></i>
+    				<span class="text-dark o5">Stats</span>
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
     			<a href="" class="text-dark">
-    				<i class="lni lni-video text-dark o5 pt-2" style="font-size: 21px;"></i>
-    				<span class="text-dark o5" style="font-size: 14px; transform: translateY(-2px);">Watch</span>
+    				<i class="lni lni-video text-dark o5 pt-2"></i>
+    				<span class="text-dark o5">Watch</span>
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
     			<a href="" class="text-dark">
-    				<i class="lni lni-clipboard text-dark o5 pt-2" style="font-size: 21px;"></i>
-    				<span class="text-dark o5" style="font-size: 14px; transform: translateY(-2px);">News</span>
+    				<i class="lni lni-clipboard text-dark o5 pt-2"></i>
+    				<span class="text-dark o5">News</span>
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
     			<a href="" class="text-dark">
-    				<i class="lni lni-more text-dark o5 pt-2" style="font-size: 21px;"></i>
-    				<span class="text-dark o5" style="font-size: 14px; transform: translateY(-2px);">More</span>
+    				<i class="lni lni-more text-dark o5 pt-2"></i>
+    				<span class="text-dark o5">More</span>
     			</a>
     		</div>
     	</div>
@@ -344,6 +344,7 @@
 			</div>
 			<div class="container-lg">
 				<h3 class="py-4" style="font-size: 27px;">Main fixtures </h3>
+
 			</div>
 			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
 				<div class="card text-center justify-content-center mb-25">
@@ -448,7 +449,7 @@
 				</div>
 			</div>
 			<div class="col-12 text-right py-0 my-0">
-				<a href="#0" class="me-1 mytxt">Load All <i class="lni lni-chevron-right"></i></a>
+				<a href="#0" class="me-1 mytxt">Browse All <i class="lni lni-chevron-right"></i></a>
 			</div>
 	<!-- /row -->	</div>
 	</div>
@@ -514,9 +515,10 @@
 	<div class="container p-0 m-0">
 		<div class="row p-0 m-0">
 			<div class="hidden-lg mx-auto p-3 scrollbar-no" style="overflow-x: scroll; white-space: nowrap;">
-					<h4 class="ps-3"><span class="h5 o9">Filter by</span> <a class="filterbybtns py-1 filterbybtns-text px-4 me-2 ms-3 mx-auto sortbybtn_x sortby"><i class="lni toggleclose-clubs filterbybtns-text fa"></i> Clubs</a> 
+					<h4 class="ps-3"><span class="h5 o9">Filter by</span> <a class="filterbybtns py-1 filterbybtns-text px-4 me-2 ms-3 mx-auto sortbybtn_x sortby"><i class="lni toggleclose-clubs filterbybtns-text fa"></i> League</a>
+					<a class="filterbybtns py-1 filterbybtns-text px-4 me-2 mx-auto sortbybtn_x sortbydate"><i class="lni toggleclose-date filterbybtns-text fa"></i> Club</a> 
 					<a class="filterbybtns py-1 filterbybtns-text px-4 me-2 mx-auto sortbybtn_x sortbydate"><i class="lni toggleclose-date filterbybtns-text fa"></i> Matchday</a> 
-					<a href="" class="filterbybtns py-1 filterbybtns-text px-4 me-3 mx-auto sortbybtn_x sortbylive"><i class="lni toggleclose-live filterbybtns-text"></i> LIVE</a> 
+					<a href="" class="filterbybtns py-1 filterbybtns-text px-4 me-3 mx-auto sortbybtn_x sortbylive"><i class="lni toggleclose-live filterbybtns-text"></i> Poster</a> 
 					</h4>
 			</div>
 		</div>
@@ -808,7 +810,40 @@
 
 	</script>
 	<script type="text/javascript">
-		if (true) {}
+		var pStart = {x: 0, y:0};
+var pStop = {x:0, y:0};
+
+function swipeStart(e) {
+    if (typeof e['targetTouches'] !== "undefined"){
+        var touch = e.targetTouches[0];
+        pStart.x = touch.screenX;
+        pStart.y = touch.screenY;
+    } else {
+        pStart.x = e.screenX;
+        pStart.y = e.screenY;
+    }
+}
+
+function swipeEnd(e){
+    if (typeof e['changedTouches'] !== "undefined"){
+        var touch = e.changedTouches[0];
+        pStop.x = touch.screenX;
+        pStop.y = touch.screenY;
+    } else {
+        pStop.x = e.screenX;
+        pStop.y = e.screenY;
+    }
+
+    swipeCheck();
+}
+
+function swipeCheck(){
+    var changeY = pStart.y - pStop.y;
+    var changeX = pStart.x - pStop.x;
+    if (isPullDown(changeY, changeX) ) {
+        alert('Swipe Down!');
+    }
+}
 	</script>
   </body>
 </html>
