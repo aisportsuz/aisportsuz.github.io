@@ -44,7 +44,7 @@
   });
 </script>
     <!-- ========================= preloader start ========================= -->
-    <div class="preloader">
+    <!-- <div class="preloader">
       <div class="loader">
         <div class="spinner">
           <div class="spinner-container">
@@ -59,7 +59,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 	<!-- preloader end -->
 
     <!-- ========================= header start ========================= -->
@@ -72,10 +72,12 @@
                 <a class="navbar-brand" href="index.html">
               		<h2 class="gradient-txt logo-h2-mobile">aiSports</h2>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class=" lni lni-lg lni-user gradient-txt"></i>
-								</button>
-								
+                <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal" style="transform: translateY(-2.5px);">
+                	<i class="lni lni-lg lni-search-alt gradient-txt"></i>
+				</button>
+				<button class="navbar-toggler" type="button" style="transform: translateY(-2.5px) translateX(-175%);">
+                 	<i class=" lni lni-lg lni-user gradient-txt"></i>
+				</button>						
                 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
 									<div class="ms-auto">
 										<ul id="nav" class="navbar-nav ms-auto">
@@ -111,6 +113,25 @@
       </div>
       <!-- navbar area -->
     </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- ========================= header end ========================= -->
     <div class="header-mobile-my hidden-lg fixed-bottom left w-100 bg-white">
     	<div class="row  px-1 border-top">
