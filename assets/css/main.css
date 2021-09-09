@@ -2672,3 +2672,8 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 
 .no-radius{
     border-radius: 0!important;
 }
+.rounded-bottom{
+    border-bottom-left-radius: 25px!important;
+    border-bottom-right-radius: 25px!important;
+
+}
