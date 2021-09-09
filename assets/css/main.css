@@ -525,7 +525,13 @@ p {
     top: 25px;
   }
 }
-
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar-toggler1 {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+}
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
