@@ -9,7 +9,6 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" 
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg"/>
 
    	<!-- ==================== Apple Application ==================== -->
@@ -37,7 +36,13 @@
     <script src="https://kit.fontawesome.com/f2685a97ac.js" crossorigin="anonymous"></script>
 
   </head>
-  <body >
+  <body oncontextmenu="return false;">
+  	<script>
+  document.body.addEventListener("wheel", e=>{
+    if(e.ctrlKey)
+      e.preventDefault();//prevent zoom
+  });
+</script>
     <!-- ========================= preloader start ========================= -->
     <div class="preloader">
       <div class="loader">
@@ -559,9 +564,9 @@
 			<div class="col-12 my-5 justify-content-center text-center dropdown-sort sortbydiv ">
 				clubs
 			</div>
-			<div class="col-12 my-5 justify-content-center text-center dropdown-sort sortbydiv-date ">
+			<!-- <div class="col-12 my-5 justify-content-center text-center dropdown-sort sortbydiv-date ">
 				calendar
-			</div>
+			</div> -->
 			<div class="col-lg-6 col-12">
 				<div class="card-small mt-3 px-4 pb-2 pt-2 mx-auto">
 					<div class=" card-small-category text-center justify-content-center mb-2">
