@@ -525,13 +525,6 @@ p {
     top: 25px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .navbar-toggler1 {
-    position: absolute;
-    right: 0;
-    top: 25px;
-  }
-}
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
@@ -936,19 +929,7 @@ p {
 /* ===================
     ABOUT SECTION CSS
 ====================== */
-.search-form{
-width: 100%;
-border-style: solid;
-border-width: 2.5px;
-border-color: #fff;
-border-radius: 10px;
-padding: 0;
-justify-content: center;
-box-sizing: border-box;
-align-items: center;
 
-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-}
 .sortbtn{
     font-size: 18px;
      background: -webkit-linear-gradient(226.07deg, #424ba6 14.22%, #424ba6 47.19%, #424ba6 83.67%);
@@ -965,35 +946,8 @@ background: -webkit-linear-gradient(226.07deg, #f56976 14.22%, #a3212d 47.19%, #
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
 }
-.search-input{
-    border-style: none;
-    border-radius: 10px;
-    padding-left: 20px;
-    font-size: 20px;
-    width: 85%;
-    background: -webkit-linear-gradient(226.07deg, #424ba6 14.22%, #424ba6 47.19%, #424ba6 83.67%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;     
-  letter-spacing: 1px;
 
-}
-.search-input::placeholder{
-    letter-spacing: 0px;
-}
-.search-btn{
-    background: transparent;
-    border-style: none;
-    font-size: 28px;
-    transform: translate(44px,4px);
-     background: -webkit-linear-gradient(226.07deg, #7F52F1 14.22%, #424ba6 47.19%, #424ba6 83.67%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media (orientation: portrait) {
-  .search-btn{
-    transform: translate(-4px,4px);
-  }
-}
+
 
 
 .about-section {
@@ -2679,4 +2633,42 @@ letter-spacing: 1px;
 }
 .text-right{
     text-align: right;
+}
+
+
+.search-form{
+width: 100%;
+border-style: solid;
+border-width: 2.5px;
+border-color: #fff;
+border-radius: 10px;
+padding: 0;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.search-input{
+    border-style: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 22px;
+    width: 85%;
+    color: #424ba6;   
+    letter-spacing: 1px;
+
+}
+.search-input::placeholder{
+    letter-spacing: 0px;
+
+
+}
+.search-btn{
+    background: transparent;
+    border-style: none;
+    font-size: 22px;
+    color: #424ba6;
+}
+.no-border{
+    border-style: none!important;
+}
+.no-radius{
+    border-radius: 0!important;
 }
