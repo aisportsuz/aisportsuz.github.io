@@ -114,7 +114,7 @@
       <!-- navbar area -->
     </header>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog no-border no-radius rounded-bottom mt-0">
+  <div class="modal-dialog no-border no-radius rounded-bottom mt-0" id="search-modal">
     <div class="modal-content no-border no-radius rounded-bottom">
       
       <div class="modal-body no-border no-radius ">
@@ -126,6 +126,9 @@
         <div class="mt-4 mb-3 text-center">
         	<a href="#" class="mybtn mytxt px-4 py-1 me-3">Calendar <i class="lni lni-chevron-down ps-1" style="transform: translateY(2px);"></i></a>
         	<a href="#" class="mybtn mytxt px-4 py-1">League <i class="lni lni-chevron-down ps-1" style="transform: translateY(2px);"></i></a>
+        </div>
+        <div class="modal-search-swiper text-center justify-content-center w-100">
+        	<a class=""></a>
         </div>
       </div>
       
@@ -858,6 +861,20 @@ if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
 return false;
 }
 }
+</script>
+<script type="text/javascript">
+	// Use class to get element by string.
+var swiper = new Swipe('#search-modal');
+swiper.onLeft(function() { alert('You swiped left.') });
+swiper.run();
+
+// Get the element yourself.
+var swiper = new Swipe(document.getElementById('#my-element'));
+swiper.onLeft(function() { alert('You swiped left.') });
+swiper.run();
+
+// One-liner.
+(new Swipe('#my-element')).onLeft(function() { alert('You swiped left.') }).run();
 </script>
   </body>
 </html>
