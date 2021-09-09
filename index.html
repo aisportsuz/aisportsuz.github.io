@@ -75,7 +75,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal" style="transform: translateY(-2.5px);">
                 	<i class="lni lni-lg lni-search-alt gradient-txt"></i>
 				</button>
-				<button class="navbar-toggler" type="button" style="transform: translateY(-2.5px) translateX(-175%);">
+				<button class="navbar-toggler" type="button" style="transform: translateY(-2.5px) translateX(-185%);">
                  	<i class=" lni lni-lg lni-user gradient-txt"></i>
 				</button>						
                 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
@@ -114,21 +114,21 @@
       <!-- navbar area -->
     </header>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+  <div class="modal-dialog no-border no-radius rounded-bottom mt-0">
+    <div class="modal-content no-border no-radius rounded-bottom">
+      
+      <div class="modal-body no-border no-radius ">
+      	<span class="mb-4 mt-1"><i class="lni-sm fas fa-info py-1 px-2" style="border-style: solid; border-width: 2px; border-color: #424ba6; border-radius: 50%; color: #424ba6;"></i> <span class="ps-2 pt-1" style="transform: translateY(1px);">Search for fixtures, news, podcasts...</span></span>
+        <form class="form-modal-search search-form">
+        	<input class="search-input py-3" type="text" name="search" placeholder="Search . . . ">
+        	<a class="search-btn"><i class="lni lni-lg lni-search-alt"></i></a>
+        </form>
+        <div class="mt-4 mb-3 text-center">
+        	<a href="#" class="mybtn mytxt px-4 py-1 me-3">Calendar <i class="lni lni-chevron-down ps-1" style="transform: translateY(2px);"></i></a>
+        	<a href="#" class="mybtn mytxt px-4 py-1">League <i class="lni lni-chevron-down ps-1" style="transform: translateY(2px);"></i></a>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      
     </div>
   </div>
 </div>
