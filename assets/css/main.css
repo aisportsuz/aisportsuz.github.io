@@ -2452,7 +2452,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
 .header-mobile-my{
     z-index: 100!important;
     height: auto;
-    border-radius: 25px;
+    border-radius: 30px;
     width: 95%;
     left: 2.5%;
     bottom: 20px;
