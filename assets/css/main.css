@@ -2452,6 +2452,15 @@ only screen and (min-width:992px) and (max-width:1199px) {
 .header-mobile-my{
     z-index: 100!important;
     height: auto;
+    border-radius: 25px;
+    width: 95%;
+    left: 2.5%;
+    bottom: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.header-mobile-my *{
+    background: transparent;
 
 }
 .header-mobile-my a i{
@@ -2673,7 +2682,97 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 
     border-radius: 0!important;
 }
 .rounded-bottom{
-    border-bottom-left-radius: 25px!important;
-    border-bottom-right-radius: 25px!important;
+    border-bottom-left-radius: 30px!important;
+    border-bottom-right-radius: 30px!important;
 
+}
+.rounded-top{
+    border-top-left-radius: 30px!important;
+    border-top-right-radius: 30px!important;
+
+}
+.modal-search-swiper{
+    position: absolute;
+    bottom: 4.5px;
+    left: 0;
+}
+.modal-search-swiper a{
+    height: 4px;
+    width: 70px;
+    border-radius: 500px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*======================================*/
+.modal-more-swiper{
+    position: absolute;
+    top: 4.5px;
+    left: 0;
+}
+.modal-more-swiper a{
+    height: 4px;
+    width: 70px;
+    border-radius: 500px;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-p-bottom .modal-dialog {
+  position: absolute;
+  bottom: 0;
+  left: 2.5%;
+  right: 2.5%;
+  max-width: 95% !important;
+  margin: 0;
+  transform: translateY(100%) !important;
+}
+.modal-p-bottom .modal-dialog .modal-content {
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.modal-p-bottom.show {
+  overflow: hidden;
+}
+.modal-p-bottom.show .modal-dialog {
+  transform: translateY(0%) !important;
+  min-height: 80px;
+}
+.modalmore{
+    height: calc(100vh - 71px);
+}
+.modal-more-content{
+    position: absolute;
+    bottom: 0;
+    left: 3.5%;
+    right: 3.5%;
+    height: 85vh;
+    overflow-y: auto!important;
+    width: 93%;
+    
+}
+body.modal-open {
+    overflow: hidden!important;
+}
+.avatar{
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.text-right-my{
+    text-align: right!important;
+}
+.text-left-my{
+    text-align: left!important;
+}
+.account-btn{
+    background-color: rgb(247,247,247);
+    border-radius: 15px;
+    color: #333;
+    text-align: left!important;
+}
+.account-btn i{
+    text-align: left!important;
+
+}
+.account-btn .font-25{
+font-size: 25px;
+}
+.logout-acc{
+    font-size: 20px;
 }
