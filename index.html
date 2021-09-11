@@ -36,7 +36,9 @@
     <script src="https://kit.fontawesome.com/f2685a97ac.js" crossorigin="anonymous"></script>
 
   </head>
-  <body oncontextmenu="return false;">
+  <body >
+  	<!-- oncontextmenu="return false;" -->
+
   	<script>
   document.body.addEventListener("wheel", e=>{
     if(e.ctrlKey)
@@ -75,7 +77,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal" style="transform: translateY(-2.5px);">
                 	<i class="lni lni-lg lni-search-alt gradient-txt"></i>
 				</button>
-				<button class="navbar-toggler" type="button" style="transform: translateY(-2.5px) translateX(-185%);">
+				<button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modalmore" style="transform: translateY(-2.5px) translateX(-185%);">
                  	<i class=" lni lni-lg lni-user gradient-txt"></i>
 				</button>						
                 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
@@ -127,7 +129,7 @@
         	<a href="#" class="mybtn mytxt px-4 py-1 me-3">Calendar <i class="lni lni-chevron-down ps-1" style="transform: translateY(2px);"></i></a>
         	<a href="#" class="mybtn mytxt px-4 py-1">League <i class="lni lni-chevron-down ps-1" style="transform: translateY(2px);"></i></a>
         </div>
-        <div class="modal-search-swiper text-center justify-content-center w-100">
+        <div class="modal-search-swiper text-center justify-content-center w-100" data-dismiss="modal">
         	<a class=""></a>
         </div>
       </div>
@@ -136,8 +138,8 @@
   </div>
 </div>
     <!-- ========================= header end ========================= -->
-    <div class="header-mobile-my hidden-lg fixed-bottom left w-100 bg-white">
-    	<div class="row  px-1 border-top">
+    <div class="header-mobile-my hidden-lg fixed-bottom bg-white">
+    	<div class="row  px-2 ">
     		<div class="col text-center px-auto mx-auto">
     			<a href="#home" class="text-dark">
     				<i class="lni lni-ticket-alt gradient-txt-my pt-2"></i>
@@ -163,13 +165,61 @@
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
-    			<a href="" class="text-dark">
+    			<a href="#" class="text-dark" >
     				<i class="lni lni-more text-dark o5 pt-2"></i>
     				<span class="text-dark o5">More</span>
     			</a>
     		</div>
     	</div>
     </div>
+
+<div class="modal fade modal-p-bottom no-border no-radius mx-0" id="modalmore">
+  <div class="modal-dialog no-border no-radius mx-0 ">
+    <div class="modal-content no-border no-radius mx-0 rounded-top modalmore">
+      <div class="modal-body py-5 no-border no-radius mx-0">
+      	<div class="modal-more-swiper text-center justify-content-center w-100" data-dismiss="modal">
+        	<a class=""></a>
+        </div>
+        <div class="modal-more-content p-0 m-0 text-center justify-content-center">
+        	<div class="avatar-div mt-3 mb-5">
+        		<img src="assets/images/team/team4.jpg" width="120" height="120" class="avatar">
+        		<h3 class="mt-3 mb-2">Alexander Burki</h3>
+        		<h4 class="mb-1">Liverpool FC</h4>
+        		<h6 class="o7">Premier League</h6>
+        		
+        	</div>
+        	<a href="#0" class="d-flex account-btn py-3 w-100 mb-2 ps-4">
+        		<i class="lni lni-flag py-auto my-auto font-25"></i>
+        		<h5 class="ms-3 py-auto my-auto">Folllowing Clubs</h5>
+        		<i class="fas fa-chevron-right py-auto my-auto go h4 o5 ms-auto me-3"></i>
+        	</a>
+        	<a href="#0" class="d-flex account-btn py-3 w-100 mb-2 ps-4">
+        		<i class="lni lni-bullhorn py-auto my-auto font-25"></i>
+        		<h5 class="ms-3 py-auto my-auto">Folllowing Channels</h5>
+        		<i class="fas fa-chevron-right py-auto my-auto go h4 o5 ms-auto me-3"></i>
+        	</a>
+        	<a href="#0" class="d-flex account-btn py-3 w-100 mb-2 ps-4">
+        		<i class="lni lni-tshirt py-auto my-auto font-25"></i>
+        		<h5 class="ms-3 py-auto my-auto"> Favorite Players</h5>
+        		<i class="fas fa-chevron-right py-auto my-auto go h4 o5 ms-auto me-3"></i>
+        	</a>
+        	<a href="#0" class="d-flex account-btn py-3 w-100 mb-2 ps-4">
+        		<i class="lni lni-bookmark py-auto my-auto font-25"></i>
+        		<h5 class="ms-3 py-auto my-auto">Saved</h5>
+        		<i class="fas fa-chevron-right py-auto my-auto go h4 o5 ms-auto me-3"></i>
+        	</a>
+        	<a href="#0" class="d-flex account-btn py-3 w-100 mb-2 ps-4">
+        		<i class="lni lni-cog py-auto my-auto font-25"></i>
+        		<h5 class="ms-3 py-auto my-auto">Settings</h5>
+        		<i class="fas fa-chevron-right py-auto my-auto go h4 o5 ms-auto me-3"></i>
+        	</a>
+        	<a href="#0" class="logout-acc text-danger mt-5">Log Out</a><br>
+        	<a href="#0" class="mt-2 mb-4 text-dark">Privacy & Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- ========================= hero-section start ========================= -->
 
 <div class="slider-active">
@@ -808,6 +858,7 @@
 		</div>
 	</div>
 </section>
+
 <!-- ==================== /Watch end ==================== -->
 
 <!-- ========================= partners start ========================= -->
@@ -863,18 +914,11 @@ return false;
 }
 </script>
 <script type="text/javascript">
-	// Use class to get element by string.
-var swiper = new Swipe('#search-modal');
-swiper.onLeft(function() { alert('You swiped left.') });
-swiper.run();
-
-// Get the element yourself.
-var swiper = new Swipe(document.getElementById('#my-element'));
-swiper.onLeft(function() { alert('You swiped left.') });
-swiper.run();
-
-// One-liner.
-(new Swipe('#my-element')).onLeft(function() { alert('You swiped left.') }).run();
+	$(".modal").on("show", function () {
+  $("body").addClass("modal-open");
+}).on("hidden", function () {
+  $("body").removeClass("modal-open")
+});
 </script>
   </body>
 </html>
