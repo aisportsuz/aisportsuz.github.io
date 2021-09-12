@@ -216,8 +216,12 @@ p {
   background-image: linear-gradient(231.43deg, #7F52F1 10.7%, #5786F1 46.47%, #7F52F1 86.05%);
   overflow: hidden;
 }
-.gradient-txt-my{
+.gradient-txt-my *{
   color: #4169e1;
+}
+.text-dark-my *{
+    color: #333;
+    opacity: 0.5;
 }
 .active-bottom-header{
     border-top-style: solid;
@@ -2643,6 +2647,9 @@ letter-spacing: 1px;
     color: #4169e1;
     letter-spacing: 0.5px;
 }
+.mycolor{
+    color: #4169e1;
+}
 .text-right{
     text-align: right;
 }
@@ -2776,6 +2783,11 @@ body.modal-open {
     border-radius: 15px;
     color: #333;
     text-align: left!important;
+}
+.more-me{
+    background-color: rgb(247,247,247);
+    border-radius: 15px;
+    color: #333;
 }
 .account-btn i{
     text-align: left!important;
