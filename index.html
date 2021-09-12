@@ -915,9 +915,9 @@ return false;
 </script>
 <script type="text/javascript">
 	$(".modal").on("show", function () {
-  $('body').css('overflow', 'hidden');
+  $("body").addClass("modal-open");
 }).on("hidden", function () {
-  $('body').css('overflow', 'auto');
+  $("body").removeClass("modal-open")
 });
 </script>
 <script src="assets/js/index.umd.min.js"></script>
