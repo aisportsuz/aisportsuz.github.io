@@ -466,13 +466,13 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 
-.sticky {
+/*.sticky {
   position: fixed;
   z-index: 99;
   background-color: #fff;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-out 0s;
-}
+}*/
 
 .sticky .navbar .navbar-nav .nav-item a {
   color: rgba(0, 0, 0, 0.9);
@@ -2464,36 +2464,36 @@ only screen and (min-width:992px) and (max-width:1199px) {
 
 }
 .header-mobile-my a i{
-    font-size: 21px;
+    font-size: 22px;
 
 }
 .header-mobile-my a span{
-    font-size: 14px;
+    font-size: 15px;
     transform: translateY(-2px);
 
 }
 @media (width: 414px) {
   .header-mobile-my a i{
-    font-size: 24px;
+    font-size: 25px;
 
 }
 }
 @media (width: 414px) {
   .header-mobile-my a span{
-    font-size: 16px;
+    font-size: 17px;
     transform: translateY(-2px);
 
 }
 }
 @media (max-width: 280px) {
   .header-mobile-my a i{
-    font-size: 18px;
+    font-size: 19px;
 
 }
 }
 @media (max-width: 280px) {
   .header-mobile-my a span{
-    font-size: 12px;
+    font-size: 13px;
     transform: translateY(-2px);
 
 }
