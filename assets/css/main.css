@@ -2818,5 +2818,5 @@ font-size: 25px;
 .content-iframe{
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 70px);
 }
