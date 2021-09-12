@@ -303,6 +303,9 @@ p {
 }
 
 /*===== All Preloader Style =====*/
+.my-loader{
+    
+}
 .preloader {
   /* Body Overlay */
   position: fixed;
@@ -325,7 +328,7 @@ p {
 .preloader .loader .spinner {
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 50%;
   width: 64px;
   margin-left: -32px;
   z-index: 18;
