@@ -138,33 +138,33 @@
     <div class="header-mobile-my hidden-lg fixed-bottom bg-white">
     	<div class="row  px-3 py-1 ">
     		<div class="col text-center px-auto mx-auto">
-    			<a href="#home" class="text-dark">
-    				<i class="lni lni-ticket-alt gradient-txt-my pt-2"></i>
-    				<span class="gradient-txt-my">Latest</span>
+    			<a href="#home" class="gradient-txt-my" id="mainsectionbtn" onclick="mainsection()">
+    				<i class="lni lni-ticket-alt pt-2"></i>
+    				<span class="">Latest</span>
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
-    			<a href="" class="text-dark">
-    				<i class="lni lni-bar-chart text-dark o5 pt-2"></i>
-    				<span class="text-dark o5">Stats</span>
+    			<a href="#stats" class="text-dark-my" id="statssectionbtn" onclick="statssection()">
+    				<i class="lni lni-bar-chart pt-2"></i>
+    				<span class="">Stats</span>
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
-    			<a href="" class="text-dark">
-    				<i class="lni lni-video text-dark o5 pt-2"></i>
-    				<span class="text-dark o5">Watch</span>
+    			<a href="#watch" class="text-dark-my" id="watchsectionbtn" onclick="watchsection()">
+    				<i class="lni lni-video pt-2"></i>
+    				<span class="">Watch</span>
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
-    			<a href="" class="text-dark">
-    				<i class="lni lni-clipboard text-dark o5 pt-2"></i>
-    				<span class="text-dark o5">News</span>
+    			<a href="#news" class="text-dark-my" id="newssectionbtn" onclick="newssection()">
+    				<i class="lni lni-clipboard pt-2"></i>
+    				<span class="">News</span>
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
-    			<a href="#" class="text-dark" >
-    				<i class="lni lni-more text-dark o5 pt-2"></i>
-    				<span class="text-dark o5">More</span>
+    			<a href="#more" class="text-dark-my" id="moresectionbtn" onclick="moresection()">
+    				<i class="lni lni-more pt-2"></i>
+    				<span class="">More</span>
     			</a>
     		</div>
     	</div>
@@ -290,6 +290,130 @@ return false;
         }
       });
     </script>
-    
+    <script>
+		function moresection() {
+		$('#mainsectionbtn').removeClass('gradient-txt-my');
+		$('#mainsectionbtn').addClass('text-dark-my');
+
+		$('#statssectionbtn').removeClass('gradient-txt-my');
+		$('#statssectionbtn').addClass('text-dark-my');
+
+		$('#newssectionbtn').removeClass('gradient-txt-my');
+		$('#newssectionbtn').addClass('text-dark-my');
+
+		$('#watchsectionbtn').removeClass('gradient-txt-my');
+		$('#watchsectionbtn').addClass('text-dark-my');
+
+		$('#moresectionbtn').removeClass('text-dark-my');
+		$('#moresectionbtn').addClass('gradient-txt-my');
+  		document.getElementById("content-iframe").src = "more.html";
+  		$('#moresectionbtn').css('pointer-events', 'none');
+
+  		$('#mainsectionbtn').css('pointer-events', 'initial');
+  		$('#statssectionbtn').css('pointer-events', 'initial');
+  		$('#newssectionbtn').css('pointer-events', 'initial');
+  		$('#watchsectionbtn').css('pointer-events', 'initial');
+		}
+	</script>
+	<script>
+		function mainsection() {
+		$('#moresectionbtn').removeClass('gradient-txt-my');
+		$('#moresectionbtn').addClass('text-dark-my');
+
+		$('#statssectionbtn').removeClass('gradient-txt-my');
+		$('#statssectionbtn').addClass('text-dark-my');
+
+		$('#newssectionbtn').removeClass('gradient-txt-my');
+		$('#newssectionbtn').addClass('text-dark-my');
+
+		$('#watchsectionbtn').removeClass('gradient-txt-my');
+		$('#watchsectionbtn').addClass('text-dark-my');
+
+		$('#mainsectionbtn').removeClass('text-dark-my');
+		$('#mainsectionbtn').addClass('gradient-txt-my');
+  		document.getElementById("content-iframe").src = "content.html";
+  		$('#mainsectionbtn').css('pointer-events', 'none');
+
+  		$('#moresectionbtn').css('pointer-events', 'initial');
+  		$('#statssectionbtn').css('pointer-events', 'initial');
+  		$('#newssectionbtn').css('pointer-events', 'initial');
+  		$('#watchsectionbtn').css('pointer-events', 'initial');
+		}
+	</script>
+	<script>
+		function statssection() {
+		$('#moresectionbtn').removeClass('gradient-txt-my');
+		$('#moresectionbtn').addClass('text-dark-my');
+
+		$('#mainsectionbtn').removeClass('gradient-txt-my');
+		$('#mainsectionbtn').addClass('text-dark-my');
+
+		$('#newssectionbtn').removeClass('gradient-txt-my');
+		$('#newssectionbtn').addClass('text-dark-my');
+
+		$('#watchsectionbtn').removeClass('gradient-txt-my');
+		$('#watchsectionbtn').addClass('text-dark-my');
+
+		$('#statssectionbtn').removeClass('text-dark-my');
+		$('#statssectionbtn').addClass('gradient-txt-my');
+  		document.getElementById("content-iframe").src = "stats.html";
+  		$('#statssectionbtn').css('pointer-events', 'none');
+
+  		$('#moresectionbtn').css('pointer-events', 'initial');
+  		$('#mainsectionbtn').css('pointer-events', 'initial');
+  		$('#newssectionbtn').css('pointer-events', 'initial');
+  		$('#watchsectionbtn').css('pointer-events', 'initial');
+		}
+	</script>
+	<script>
+		function watchsection() {
+		$('#moresectionbtn').removeClass('gradient-txt-my');
+		$('#moresectionbtn').addClass('text-dark-my');
+
+		$('#mainsectionbtn').removeClass('gradient-txt-my');
+		$('#mainsectionbtn').addClass('text-dark-my');
+
+		$('#newssectionbtn').removeClass('gradient-txt-my');
+		$('#newssectionbtn').addClass('text-dark-my');
+
+		$('#statssectionbtn').removeClass('gradient-txt-my');
+		$('#statssectionbtn').addClass('text-dark-my');
+
+		$('#watchsectionbtn').removeClass('text-dark-my');
+		$('#watchsectionbtn').addClass('gradient-txt-my');
+  		document.getElementById("content-iframe").src = "watch.html";
+  		$('#watchsectionbtn').css('pointer-events', 'none');
+
+  		$('#moresectionbtn').css('pointer-events', 'initial');
+  		$('#mainsectionbtn').css('pointer-events', 'initial');
+  		$('#newssectionbtn').css('pointer-events', 'initial');
+  		$('#statssectionbtn').css('pointer-events', 'initial');
+		}
+	</script>
+	<script>
+		function newssection() {
+		$('#moresectionbtn').removeClass('gradient-txt-my');
+		$('#moresectionbtn').addClass('text-dark-my');
+
+		$('#mainsectionbtn').removeClass('gradient-txt-my');
+		$('#mainsectionbtn').addClass('text-dark-my');
+
+		$('#watchsectionbtn').removeClass('gradient-txt-my');
+		$('#watchsectionbtn').addClass('text-dark-my');
+
+		$('#statssectionbtn').removeClass('gradient-txt-my');
+		$('#statssectionbtn').addClass('text-dark-my');
+
+		$('#newssectionbtn').removeClass('text-dark-my');
+		$('#newssectionbtn').addClass('gradient-txt-my');
+  		document.getElementById("content-iframe").src = "watch.html";
+  		$('#newssectionbtn').css('pointer-events', 'none');
+
+  		$('#moresectionbtn').css('pointer-events', 'initial');
+  		$('#mainsectionbtn').css('pointer-events', 'initial');
+  		$('#watchsectionbtn').css('pointer-events', 'initial');
+  		$('#statssectionbtn').css('pointer-events', 'initial');
+		}
+	</script>
   </body>
 </html>
