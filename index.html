@@ -920,5 +920,12 @@ return false;
   $("body").removeClass("modal-open")
 });
 </script>
+<script src="assets/js/index.umd.min.js"></script>
+    <script>
+      /* global PullToRefresh */
+      PullToRefresh.init({
+        onRefresh: function() { location.reload();; },
+      });
+    </script>
   </body>
 </html>
