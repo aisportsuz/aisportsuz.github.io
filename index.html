@@ -259,10 +259,10 @@ return false;
         mainElement: '#account-modal',
         triggerElement: '#account-modal',
         onRefresh: function (cb) {
-          setTimeout(function () {
+          
             cb();
             document.getElementById("close-modal-acc").click();
-          }, 1);
+          
         },
         shouldPullToRefresh: function(){
           return !this.mainElement.scrollTop;
