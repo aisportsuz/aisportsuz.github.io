@@ -325,7 +325,7 @@ p {
 .preloader .loader .spinner {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   width: 64px;
   margin-left: -32px;
   z-index: 18;
@@ -2814,4 +2814,9 @@ font-size: 25px;
   z-index: 1001!important;
   transition: all 0.3s ease-out 0s;
 }
+}
+.content-iframe{
+    display: block;
+    width: 100vw;
+    height: 100vh;
 }
