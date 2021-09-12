@@ -36,7 +36,7 @@
     <script src="https://kit.fontawesome.com/f2685a97ac.js" crossorigin="anonymous"></script>
 
   </head>
-  <body >
+  <body class="">
   	<!-- oncontextmenu="return false;" -->
 
   	<script>
@@ -915,9 +915,9 @@ return false;
 </script>
 <script type="text/javascript">
 	$(".modal").on("show", function () {
-  $("body").addClass("modal-open");
+  $('body').css('overflow', 'hidden');
 }).on("hidden", function () {
-  $("body").removeClass("modal-open")
+  $('body').css('overflow', 'auto');
 });
 </script>
 <script src="assets/js/index.umd.min.js"></script>
