@@ -690,7 +690,7 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hero-section {
-    padding-top: 72px;
+    padding-top: 10px;
   }
 }
 
@@ -2775,4 +2775,35 @@ font-size: 25px;
 }
 .logout-acc{
     font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .navbar-area {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s ease-out 0s;
+}
+}
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+    .navbar-area {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s ease-out 0s;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar-area {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s ease-out 0s;
+}
 }
