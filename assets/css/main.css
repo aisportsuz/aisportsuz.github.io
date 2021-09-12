@@ -2748,7 +2748,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 
     
 }
 body.modal-open {
-    overflow: hidden!important;
+    overflow-y: hidden!important;
     height: 100vh!important;
 }
 .avatar{
