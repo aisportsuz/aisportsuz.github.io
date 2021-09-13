@@ -214,8 +214,9 @@ return false;
         onRefresh: function (cb) {
           setTimeout(function () {
             cb();
+            navigator.vibrate(200);
             location.reload();
-            window.navigator.vibrate(200);
+
           }, 1000);
         },
         shouldPullToRefresh: function(){
