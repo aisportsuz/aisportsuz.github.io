@@ -2301,10 +2301,11 @@ only screen and (min-width:992px) and (max-width:1199px) {
     opacity: 0.9;
 }
 .card{
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    background-color: rgb(252.5,252.5,252.5);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     border-style: none;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 18px;
 }
 .card .category .cat{
     position: absolute;
