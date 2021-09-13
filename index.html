@@ -139,9 +139,10 @@
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
-    			<a href="#stats" class="text-dark-my" id="statssectionbtn" onclick="statssection()">
-    				<i class="lni lni-bar-chart pt-2"></i>
-    				<span class="">Stats</span>
+    			<a href="#stats" class="" id="statssectionbtn" onclick="statssection()">
+    				<!-- <i class="lni lni-compass pt-2"></i> -->
+    				<img src="assets/images/pitch-dark.png" width="22.5" class="o8 pt-2" id="statssectionbtn-icon">
+    				<span class="text-dark-my-txt pt-1" style="transform: translateY(-1px);" id="statssectionbtn-span">Matches</span>
     			</a>
     		</div>
     		<div class="col text-center px-auto mx-auto ">
@@ -177,7 +178,7 @@
         		
         	</div>
         	<a href="#0" class="d-flex account-btn py-3 w-100 mb-2 ps-4">
-        		<i class="lni lni-stamp py-auto my-auto font-25"></i>
+        		<i class="lni lni-tag py-auto my-auto font-25"></i>
         		<h5 class="ms-3 py-auto my-auto">Preferences</h5>
         		<i class="fas fa-chevron-right py-auto my-auto go h4 o5 ms-auto me-3"></i>
         	</a>
@@ -296,25 +297,19 @@ function handleTouchMove(evt) {
     yDown = null;                                             
 };
     </script>
-    <script type="text/javascript">
-    	let iframemy = $("#content-iframe").contents();
-
-iframemy.find('HTML-Element').touchwipe({
-     wipeLeft: function() { alert("left"); },
-     wipeRight: function() { alert("right"); },
-     wipeUp: function() { alert("up"); },
-     wipeDown: function() { alert("down"); },
-     min_move_x: 20,
-     min_move_y: 20,
-     preventDefaultEvents: true });
-    </script>
+   
     <script>
 		function moresection() {
+		$("#statssectionbtn-icon").attr("src","assets/images/pitch-dark.png");
 		$('#mainsectionbtn').removeClass('gradient-txt-my');
 		$('#mainsectionbtn').addClass('text-dark-my');
 
-		$('#statssectionbtn').removeClass('gradient-txt-my');
-		$('#statssectionbtn').addClass('text-dark-my');
+		$('#statssectionbtn').removeClass('gradient-txt-my-txt');
+
+		$('#statssectionbtn-span').addClass('text-dark-my-txt');
+
+		$('#statssectionbtn-icon').addClass('o8');
+		
 
 		$('#newssectionbtn').removeClass('gradient-txt-my');
 		$('#newssectionbtn').addClass('text-dark-my');
@@ -333,13 +328,18 @@ iframemy.find('HTML-Element').touchwipe({
   		$('#watchsectionbtn').css('pointer-events', 'initial');
 		}
 	</script>
+				
 	<script>
 		function mainsection() {
+			$("#statssectionbtn-icon").attr("src","assets/images/pitch-dark.png");
 		$('#moresectionbtn').removeClass('gradient-txt-my');
 		$('#moresectionbtn').addClass('text-dark-my');
 
-		$('#statssectionbtn').removeClass('gradient-txt-my');
-		$('#statssectionbtn').addClass('text-dark-my');
+		$('#statssectionbtn').removeClass('gradient-txt-my-txt');
+
+		$('#statssectionbtn-span').addClass('text-dark-my-txt');
+
+		$('#statssectionbtn-icon').addClass('o8');
 
 		$('#newssectionbtn').removeClass('gradient-txt-my');
 		$('#newssectionbtn').addClass('text-dark-my');
@@ -360,6 +360,7 @@ iframemy.find('HTML-Element').touchwipe({
 	</script>
 	<script>
 		function statssection() {
+		$("#statssectionbtn-icon").attr("src","assets/images/pitch-blue.png");
 		$('#moresectionbtn').removeClass('gradient-txt-my');
 		$('#moresectionbtn').addClass('text-dark-my');
 
@@ -372,8 +373,12 @@ iframemy.find('HTML-Element').touchwipe({
 		$('#watchsectionbtn').removeClass('gradient-txt-my');
 		$('#watchsectionbtn').addClass('text-dark-my');
 
-		$('#statssectionbtn').removeClass('text-dark-my');
+		
 		$('#statssectionbtn').addClass('gradient-txt-my');
+		$('#statssectionbtn-icon').removeClass('o8');
+		
+		$('#statssectionbtn-span').removeClass('text-dark-my-txt');
+		$('#statssectionbtn-span').addClass('gradient-txt-my-txt');
   		document.getElementById("content-iframe").src = "stats.html";
   		$('#statssectionbtn').css('pointer-events', 'none');
 
@@ -383,8 +388,10 @@ iframemy.find('HTML-Element').touchwipe({
   		$('#watchsectionbtn').css('pointer-events', 'initial');
 		}
 	</script>
+
 	<script>
 		function watchsection() {
+		$("#statssectionbtn-icon").attr("src","assets/images/pitch-dark.png");
 		$('#moresectionbtn').removeClass('gradient-txt-my');
 		$('#moresectionbtn').addClass('text-dark-my');
 
@@ -394,8 +401,11 @@ iframemy.find('HTML-Element').touchwipe({
 		$('#newssectionbtn').removeClass('gradient-txt-my');
 		$('#newssectionbtn').addClass('text-dark-my');
 
-		$('#statssectionbtn').removeClass('gradient-txt-my');
-		$('#statssectionbtn').addClass('text-dark-my');
+		$('#statssectionbtn').removeClass('gradient-txt-my-txt');
+
+		$('#statssectionbtn-span').addClass('text-dark-my-txt');
+
+		$('#statssectionbtn-icon').addClass('o8');
 
 		$('#watchsectionbtn').removeClass('text-dark-my');
 		$('#watchsectionbtn').addClass('gradient-txt-my');
@@ -410,6 +420,7 @@ iframemy.find('HTML-Element').touchwipe({
 	</script>
 	<script>
 		function newssection() {
+		$("#statssectionbtn-icon").attr("src","assets/images/pitch-dark.png");
 		$('#moresectionbtn').removeClass('gradient-txt-my');
 		$('#moresectionbtn').addClass('text-dark-my');
 
@@ -419,8 +430,11 @@ iframemy.find('HTML-Element').touchwipe({
 		$('#watchsectionbtn').removeClass('gradient-txt-my');
 		$('#watchsectionbtn').addClass('text-dark-my');
 
-		$('#statssectionbtn').removeClass('gradient-txt-my');
-		$('#statssectionbtn').addClass('text-dark-my');
+		$('#statssectionbtn').removeClass('gradient-txt-my-txt');
+
+		$('#statssectionbtn-span').addClass('text-dark-my-txt');
+
+		$('#statssectionbtn-icon').addClass('o8');
 
 		$('#newssectionbtn').removeClass('text-dark-my');
 		$('#newssectionbtn').addClass('gradient-txt-my');
