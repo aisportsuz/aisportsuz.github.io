@@ -215,6 +215,7 @@ return false;
           setTimeout(function () {
             cb();
             location.reload();
+            window.navigator.vibrate(200);
           }, 1000);
         },
         shouldPullToRefresh: function(){
