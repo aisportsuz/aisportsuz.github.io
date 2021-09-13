@@ -983,7 +983,7 @@ background: -webkit-linear-gradient(226.07deg, #f56976 14.22%, #a3212d 47.19%, #
     text-shadow: none!important;
 }
 .no-border{
-    border-style: none;
+    border-style: none!important;
 }
 .ttx-1{
     transform: translateY(1px);
