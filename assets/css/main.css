@@ -2670,8 +2670,9 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 
     padding-left: 20px;
     font-size: 22px;
     width: 85%;
-    color: #424ba6;   
-    letter-spacing: 1px;
+    color: #424ba6;
+    background: transparent;   
+    letter-spacing: 2px;
 
 }
 .search-input::placeholder{
@@ -2789,6 +2790,11 @@ body.modal-open {
     border-radius: 15px;
     color: #333;
 }
+.mydiv{
+    background-color: rgb(247,247,247);
+    border-radius: 15px;
+    color: #333;
+}
 .account-btn i{
     text-align: left!important;
 
@@ -2833,5 +2839,17 @@ font-size: 25px;
 .content-iframe{
     display: block;
     width: 100vw;
+    height: calc(100vh - 70px);
+}
+.myoffcanvas-top{
+    height: 35vh;
+    border-radius: 25px;
+}
+@media only screen and (min-height: 767px) and (max-width: 767px) {
+.myoffcanvas-top{
+    height: 29vh;
+}
+}
+.myoffcanvas-bottom{
     height: calc(100vh - 70px);
 }
