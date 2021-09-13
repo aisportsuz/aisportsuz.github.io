@@ -465,12 +465,13 @@ p {
 	NAVBAR CSS 
 ============================= */
 .navbar-area {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99!important;
+  z-index: 1001!important;
   transition: all 0.3s ease-out 0s;
+  background-color: #fff;
 }
 
 /*.sticky {
@@ -697,7 +698,7 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hero-section {
-    padding-top: 10px;
+    padding-top: 0px;
   }
 }
 
@@ -2380,7 +2381,8 @@ only screen and (min-width:992px) and (max-width:1199px) {
 
 /*========== upcoming events ==========*/
 .card-small{
-    background-color: rgb(248,248,248);
+    background-color: rgb(252.5,252.5,252.5);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     border-style: none;
     border-radius: 10px;
 }
@@ -2807,40 +2809,11 @@ font-size: 25px;
     font-size: 20px;
 }
 
-@media (max-width: 767px) {
-    .navbar-area {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1001!important;
-  transition: all 0.3s ease-out 0s;
-}
-}
-@media only screen and (min-width: 550px) and (max-width: 767px) {
-    .navbar-area {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1001!important;
-  transition: all 0.3s ease-out 0s;
-}
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .navbar-area {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1001!important;
-  transition: all 0.3s ease-out 0s;
-}
-}
+
 .content-iframe{
     display: block;
     width: 100vw;
-    height: calc(100vh - 70px);
+    height: 100vh;
 }
 .myoffcanvas-top{
     height: 35vh;
@@ -2851,6 +2824,14 @@ font-size: 25px;
     height: 29vh;
 }
 }
+.my-offcanvas-end{
+    left: 0;
+    margin-top: 70px;
+    border-style: none;
+}
 .myoffcanvas-bottom{
     height: calc(100vh - 70px);
+}
+.myoffcanvas-end-body{
+    z-index: 1010;
 }
