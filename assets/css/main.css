@@ -221,7 +221,7 @@ p {
 }
 .text-dark-my *{
     color: #333;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .active-bottom-header{
     border-top-style: solid;
@@ -2814,6 +2814,7 @@ font-size: 25px;
     display: block;
     width: 100vw;
     height: 100vh;
+    position: fixed;
 }
 .myoffcanvas-top{
     height: 35vh;
