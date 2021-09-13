@@ -24,7 +24,8 @@
     	}
     </style>
   </head>
-  <body class="" oncontextmenu="return false;">
+  <body class="" >
+  	<!-- oncontextmenu="return false;" -->
   	<script>
   document.body.addEventListener("wheel", e=>{
     if(e.ctrlKey)
@@ -66,7 +67,7 @@
 		</div>
 		<a href="#0" class="d-flex account-btn py-3 w-100 mb-4 ps-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="navindex()">
         	<img src="assets/images/myimages/clubs/Liverpool_FC.png" width="25" height="25" class="py-auto my-auto">
-        	<h5 class="ms-3 py-auto my-auto o9">Liverpool</h5>
+        	<h4 class="ms-3 py-auto my-auto o9">Liverpool</h4>
         	<i class="fas fa-chevron-right py-auto my-auto go h4 o5 ms-auto me-3"></i>
         </a>
 		<h4 class="mb-3">General</h4>
@@ -178,7 +179,7 @@
 	</div>
 </section>
 
-<div class="offcanvas offcanvas-end my-offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas offcanvas-end my-offcanvas-end no-border" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 	<div class="offcanvas-body no-border">
 		<div class="d-flex justify-content-between w-100">
     		<a data-bs-dismiss="offcanvas" aria-label="Close" class="text-dark h5"><i class="lni lni-lg lni-chevron-left"></i></a>
@@ -186,6 +187,7 @@
     	</div>
     	<hr width="100%">
     	<h4 class="mb-3">Most Valuable Players</h4>
+
     	<div class="row m-0 px-2">
     		<div class="col-8 o7 p-0">Player / Club</div>
     		<div class="col-1 o7 text-center p-0">Pos</div>
@@ -204,7 +206,7 @@
     				<h6 class="text-danger">CF</h6>
     			</div>
     			<div class="col-3 p-0 ">
-    				<h5><small>€</small>200<small>m</small></h5>
+    				<h5 class="text-dark"><small>€</small>200<small>m</small></h5>
     			</div>
     		</div>
     	</a>
@@ -221,7 +223,7 @@
     				<h6 class="text-danger">CF</h6>
     			</div>
     			<div class="col-3 p-0 ">
-    				<h5><small>€</small>130<small>m</small></h5>
+    				<h5 class="text-success"><small>€</small>130<small>m</small></h5>
     			</div>
     		</div>
     	</a>
@@ -238,7 +240,7 @@
     				<h6 class="text-danger">CF</h6>
     			</div>
     			<div class="col-3 p-0 ">
-    				<h5><small>€</small>130<small>m</small></h5>
+    				<h5 class="text-danger"><small>€</small>130<small>m</small></h5>
     			</div>
     		</div>
     	</a>
@@ -255,7 +257,7 @@
     				<h6 class="text-danger o8">RW</h6>
     			</div>
     			<div class="col-3 p-0 ">
-    				<h5><small>€</small>100<small>m</small></h5>
+    				<h5 class="text-danger"><small>€</small>100<small>m</small></h5>
     			</div>
     		</div>
     	</a>
@@ -272,7 +274,7 @@
     				<h6 class="text-success">AM</h6>
     			</div>
     			<div class="col-3 p-0 ">
-    				<h5><small>€</small>100<small>m</small></h5>
+    				<h5 class="text-danger"><small>€</small>100<small>m</small></h5>
     			</div>
     		</div>
     	</a>
@@ -294,7 +296,7 @@
 					<h6>Premier League</h6>
     			</div>
     			<div class="col-4 p-0 ">
-    				<h5><small>€</small>1.05<small>bn</small></h5>
+    				<h5 class="text-success"><small>€</small>1.05<small>bn</small></h5>
     			</div>
     		</div>
     	</a>
@@ -308,7 +310,7 @@
 					<h6>Ligue 1</h6>
     			</div>
     			<div class="col-4 p-0 ">
-    				<h5><small>€</small>997.07<small>m</small></h5>
+    				<h5 class="text-danger"><small>€</small>997.07<small>m</small></h5>
     			</div>
     		</div>
     	</a>
@@ -322,7 +324,7 @@
 					<h6>Premier League</h6>
     			</div>
     			<div class="col-4 p-0 ">
-    				<h5><small>€</small>937.23<small>m</small></h5>
+    				<h5 class="text-success"><small>€</small>937.23<small>m</small></h5>
     			</div>
     		</div>
     	</a>
@@ -336,7 +338,7 @@
 					<h6>Premier League</h6>
     			</div>
     			<div class="col-4 p-0 ">
-    				<h5><small>€</small>882.05<small>m</small></h5>
+    				<h5 class="text-success"><small>€</small>882.05<small>m</small></h5>
     			</div>
     		</div>
     	</a>
@@ -350,7 +352,7 @@
 					<h6>Premier League</h6>
     			</div>
     			<div class="col-4 p-0 ">
-    				<h5><small>€</small>879.94<small>m</small></h5>
+    				<h5 class="text-danger"><small>€</small>879.94<small>m</small></h5>
     			</div>
     		</div>
     	</a>
@@ -359,8 +361,6 @@
     	</div>
 	</div>
 </div>
-<h5>Kylian Mbappé</h5>
-    		<h6>Center-Forward</h6>
 <section class="my-4 o0"><br>.</section>
 
     <a href="#" class="scroll-top btn-hover hidden-xs">

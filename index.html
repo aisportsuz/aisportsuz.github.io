@@ -121,8 +121,8 @@
         	<a class="search-btn"><i class="lni lni-lg lni-search-alt"></i></a>
         </form>
         <div class="text-center justify-content-between mt-4">
-        	<a href="#0" class="mybtn text-dark py-1 me-3" style="width: 45%">Calendar <i class="lni lni-chevron-down" style="transform: translateY(1px) scale(0.8,0.8);"></i></a>
-        	<a href="#0" class="mybtn text-dark py-1" style="width: 45%">Club <i class="lni lni-chevron-down" style="transform: translateY(1px) scale(0.8,0.8);"></i></a>
+        	<a href="#0" class="mybtn mytxt py-1 me-3" style="width: 45%">Calendar <i class="lni lni-chevron-down" style="transform: translateY(1px) scale(0.8,0.8);"></i></a>
+        	<a href="#0" class="mybtn mytxt py-1" style="width: 45%">Club <i class="lni lni-chevron-down" style="transform: translateY(1px) scale(0.8,0.8);"></i></a>
         </div>
         <div class="modal-search-swiper text-center justify-content-center w-100" data-bs-dismiss="offcanvas" aria-label="Close" id="close-modal-search">
         	<a class=""></a>
@@ -295,6 +295,18 @@ function handleTouchMove(evt) {
     xDown = null;
     yDown = null;                                             
 };
+    </script>
+    <script type="text/javascript">
+    	let iframemy = $("#content-iframe").contents();
+
+iframemy.find('HTML-Element').touchwipe({
+     wipeLeft: function() { alert("left"); },
+     wipeRight: function() { alert("right"); },
+     wipeUp: function() { alert("up"); },
+     wipeDown: function() { alert("down"); },
+     min_move_x: 20,
+     min_move_y: 20,
+     preventDefaultEvents: true });
     </script>
     <script>
 		function moresection() {
