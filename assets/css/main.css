@@ -2381,6 +2381,12 @@ only screen and (min-width:992px) and (max-width:1199px) {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+.flag{
+    width: 30px;
+    height: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .card .category .cat .title{
     padding-left: 5px;
     transform: translateY(-2.5px);
@@ -2396,6 +2402,35 @@ only screen and (min-width:992px) and (max-width:1199px) {
     width: 75px;
     height: 75px;
     border-style: none;
+}
+.card .team_logo-matches{
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: contain!important;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+}
+.live-detector{
+    animation: live 2.5s infinite;
+    transition: all 0.3s ease-in 0s;
+    transform: scale(0.7,0.7);
+}
+@keyframes live {
+  0% {
+    opacity: 0;
+    transition: all 0.3s ease-out 0s;
+  }
+
+  50% {
+    opacity: 1;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  100% {
+    opacity: 0;
+    transition: all 0.3s ease-out 0s;
+  }
 }
 @media only screen and (min-width: 550px) and (max-width: 767px) {
     .card .team_logo{
@@ -2903,5 +2938,5 @@ font-size: 25px;
     border-style: none!important;
 }
 .pitch-width{
-    
+
 }
