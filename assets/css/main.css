@@ -2412,7 +2412,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
     border-style: none;
 }
 .live-detector{
-    animation: live 2.5s infinite;
+    animation: live 2s infinite;
     transition: all 0.3s ease-in 0s;
     transform: scale(0.7,0.7);
 }
