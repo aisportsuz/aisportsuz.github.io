@@ -46,13 +46,24 @@
 <section class="about-section" style="margin-top: 0;">
     <div class="container">
         <div class="row">
-            <div class="mydiv p-3 mb-2" id="reload-section-matches">
-                <small class="o8">Recommendations and order of matchmaking are selected by the Artificial Intelligence, taking into account your actions and preferences. <a href="#0">Learn more</a></small>
+            <div class="alert alert-secondary mydiv no-border alert-dismissible fade show" role="alert">
+                <span style="transform: translateY(2px);"><i class="fas fa-info py-1 px-2 m-1" style="border-style: solid; border-width: 2px; border-color: #424ba6; border-radius: 50%; color: #424ba6; font-size: 11px;"></i> All times shown in your <span class="text-dark">local time</span></span> <br>Recommendations and order of matchmaking are selected by the Artificial Intelligence, taking into account your actions and preferences. <a href="#0">Learn more</a>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         </div>
     </div>
-    <div class="container p-0 m-0">
+    <div class="container p-0 m-0" id="reload-section-matches">
         <div class="row p-0 m-0">
+            <div class="hidden-lg mx-auto p-0 ps-3 pt-3 scrollbar-no" style="overflow-x: scroll; white-space: nowrap;">
+                    <h4><a class="filterbybtns filterbybtns-active py-1 filterbybtns-text px-4 me-2 ms-2 mx-auto sortbybtn_x">Fixtures</a> 
+                    <a class="filterbybtns py-1 filterbybtns-text px-4 me-2 mx-auto sortbybtn_x">Results</a> 
+                    <a class="filterbybtns py-1 filterbybtns-text px-4 me-2 mx-auto sortbybtn_x">Tables</a> 
+                    <a class="filterbybtns py-1 filterbybtns-text px-4 me-2 mx-auto sortbybtn_x">Clubs</a> 
+                    <a class="filterbybtns py-1 filterbybtns-text px-4 me-2 mx-auto sortbybtn_x">Players</a> 
+                    <a class="filterbybtns py-1 filterbybtns-text px-4 me-2 mx-auto sortbybtn_x">Managers</a> 
+                    </h4>
+            </div>
+
             <div class="hidden-lg mx-auto p-3 scrollbar-no" style="overflow-x: scroll; white-space: nowrap;">
                     <h4><a class="filterbybtns filterbybtns-active py-1 filterbybtns-text px-4 me-2 ms-2 mx-auto sortbybtn_x">All</a> 
                     <a class="filterbybtns py-1 filterbybtns-text px-4 me-2 mx-auto sortbybtn_x">Premier League</a> 
