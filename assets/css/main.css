@@ -2956,3 +2956,13 @@ font-size: 25px;
     background: #4169e1!important;
     transition: all 0.3s ease-in 0s;
 }
+.matches-div{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.1);
+}
+.matches-div-top{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.1);
+}
