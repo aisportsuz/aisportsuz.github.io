@@ -48,7 +48,7 @@
     <div class="container" id="reload-section-matches">
         <div class="row">
             <div class="alert alert-secondary mydiv no-border" role="alert" >
-                <span style="transform: translateY(2px);"><i class="fas fa-info py-1 px-2 m-1" style="border-style: solid; border-width: 2px; border-color: #4169e1; border-radius: 50%; color: #4169e1; font-size: 11px;"></i> All times shown in your <span class="text-dark">local time</span></span> <br>Recommendations and order of matchmaking are selected by the Artificial Intelligence, taking into account your actions and preferences. <a href="#0">Learn more</a>
+                <span style="transform: translateY(2px);"><i class="fas fa-info py-1 px-2 m-1" style="border-style: solid; border-width: 2px; border-color: #4169e1; border-radius: 50%; color: #4169e1; font-size: 11px;"></i> All times shown in your <span class="text-dark fw-bold">local time</span></span> <br>Recommendations and order of matchmaking are selected by the Artificial Intelligence, taking into account your actions and preferences. <a href="#0">Learn more</a>
                 
             </div>
         </div>
@@ -356,6 +356,9 @@
                 </div>
             </div>
         </div>
+        <div class="text-center justify-content-center filter-fixtures fixtures">
+            <a href="#0" class="text-dark"><i class="lni lni-chevron-down"></i></a>
+        </div>
         <!-- ============================== /fifth ============================== -->
         <h3 class="mb-3 mt-4 filter-fixtures pb-3 fixtures champions_league premier_league laliga serie_a bundesliga ligue1 matches-div-top">Upcoming Fixtures</h3>
         <!-- ============================== upcoming first ============================== -->
@@ -417,7 +420,7 @@
         </div>
         <!-- ============================== /upcoming second ============================== -->
         <!-- ============================== upcoming third ============================== -->
-        <div class="col-lg-6 col-12 filter-fixtures fixtures laliga">
+        <div class="col-lg-6 col-12 filter-fixtures fixtures serie_a">
             <div class="matches-div mb-3 px-2 pb-3 mx-auto">
                 <div class=" card-small-category text-center justify-content-center mb-2">
                     <small>Serie</small> <img src="assets/images/myimages/leagues/serie_a.png" width="19" class="p-0 m-0"> <small>TIM</small>
@@ -446,7 +449,7 @@
         </div>
         <!-- ============================== /upcoming third ============================== -->
         <!-- ============================== upcoming fourth ============================== -->
-        <div class="col-lg-6 col-12 filter-fixtures fixtures laliga">
+        <div class="col-lg-6 col-12 filter-fixtures fixtures ligue1">
             <div class="matches-div mb-3 px-2 pb-3 mx-auto">
                 <div class=" card-small-category text-center justify-content-center mb-2">
                     <small>Ligue 1</small> <img src="assets/images/myimages/leagues/ligue1.png" width="19" class="p-0 m-0"> <small>Uber Eats</small>
@@ -475,7 +478,7 @@
         </div>
         <!-- ============================== /upcoming fourth ============================== -->
         <!-- ============================== upcoming fifth ============================== -->
-        <div class="col-lg-6 col-12 filter-fixtures fixtures laliga">
+        <div class="col-lg-6 col-12 filter-fixtures fixtures bundesliga">
             <div class="matches-div mb-3 px-2 pb-3 mx-auto">
                 <div class=" card-small-category text-center justify-content-center mb-2">
                     <small>Bundes</small> <img src="assets/images/myimages/leagues/bundesliga.png" width="19" class="p-0 m-0"> <small>Liga</small>
@@ -502,13 +505,109 @@
                 </div>
             </div>
         </div>
-        <!-- ============================== /upcoming fifth ============================== -->
+        <div class="text-center justify-content-center filter-fixtures fixtures">
+            <a class="text-dark" data-bs-toggle="collapse" href="#upcomingFixtures" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="lni lni-chevron-down" onclick="morebtndown()" id="morebtndown"></i></a>
+        </div>
+        
 
+        <!-- ============================== /upcoming fifth ============================== -->
+        <div class="collapse " id="upcomingFixtures">
+
+            <div class="col-lg-6 col-12 filter-fixtures fixtures bundesliga">
+                <div class="matches-div mb-3 px-2 pb-3 mx-auto">
+                    <div class=" card-small-category text-center justify-content-center mb-2">
+                        <small>Bundes</small> <img src="assets/images/myimages/leagues/bundesliga.png" width="19" class="p-0 m-0"> <small>Liga</small>
+                    </div>
+                    <div class="row">
+                        <div class=" col-3 card-small-club-title text-center justify-content-center p-0">
+                            <p class="h6 p-1 m-0 py-auto">Bayern</p>
+                        </div>
+                        <div class=" col-2 p-0">
+                            <div style="background-image: url('assets/images/myimages/clubs/bayern.png');" class="card-small-club_logo w-100">
+                            </div>
+                        </div>
+                        <div class=" col-2 text-center p-0">
+                            <p class="py-auto fw-bold font-monospace"><small>22:00</small></p>
+                            <p class="py-auto"><small>31 sep</small></p>
+                        </div>
+                        <div class=" col-2 p-0">
+                            <div style="background-image: url('assets/images/myimages/clubs/borussia_d.png');" class="card-small-club_logo w-100">
+                            </div>
+                        </div>
+                        <div class=" col-3 card-small-club-title text-center justify-content-center p-0">
+                            <p class="h6 p-1 m-0 py-auto" >Borussia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 filter-fixtures fixtures bundesliga">
+                <div class="matches-div mb-3 px-2 pb-3 mx-auto">
+                    <div class=" card-small-category text-center justify-content-center mb-2">
+                        <small>Bundes</small> <img src="assets/images/myimages/leagues/bundesliga.png" width="19" class="p-0 m-0"> <small>Liga</small>
+                    </div>
+                    <div class="row">
+                        <div class=" col-3 card-small-club-title text-center justify-content-center p-0">
+                            <p class="h6 p-1 m-0 py-auto">Bayern</p>
+                        </div>
+                        <div class=" col-2 p-0">
+                            <div style="background-image: url('assets/images/myimages/clubs/bayern.png');" class="card-small-club_logo w-100">
+                            </div>
+                        </div>
+                        <div class=" col-2 text-center p-0">
+                            <p class="py-auto fw-bold font-monospace"><small>22:00</small></p>
+                            <p class="py-auto"><small>31 sep</small></p>
+                        </div>
+                        <div class=" col-2 p-0">
+                            <div style="background-image: url('assets/images/myimages/clubs/borussia_d.png');" class="card-small-club_logo w-100">
+                            </div>
+                        </div>
+                        <div class=" col-3 card-small-club-title text-center justify-content-center p-0">
+                            <p class="h6 p-1 m-0 py-auto" >Borussia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 filter-fixtures fixtures bundesliga">
+                <div class="matches-div mb-3 px-2 pb-3 mx-auto">
+                    <div class=" card-small-category text-center justify-content-center mb-2">
+                        <small>Bundes</small> <img src="assets/images/myimages/leagues/bundesliga.png" width="19" class="p-0 m-0"> <small>Liga</small>
+                    </div>
+                    <div class="row">
+                        <div class=" col-3 card-small-club-title text-center justify-content-center p-0">
+                            <p class="h6 p-1 m-0 py-auto">Bayern</p>
+                        </div>
+                        <div class=" col-2 p-0">
+                            <div style="background-image: url('assets/images/myimages/clubs/bayern.png');" class="card-small-club_logo w-100">
+                            </div>
+                        </div>
+                        <div class=" col-2 text-center p-0">
+                            <p class="py-auto fw-bold font-monospace"><small>22:00</small></p>
+                            <p class="py-auto"><small>31 sep</small></p>
+                        </div>
+                        <div class=" col-2 p-0">
+                            <div style="background-image: url('assets/images/myimages/clubs/borussia_d.png');" class="card-small-club_logo w-100">
+                            </div>
+                        </div>
+                        <div class=" col-3 card-small-club-title text-center justify-content-center p-0">
+                            <p class="h6 p-1 m-0 py-auto" >Borussia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <section class="my-5 o0">.</section>
+        </div>
         </div>
     </div>  
 </section>
 
-    <section class="my-4 o0"><br>.</section>
+<div class="container">
+    <div class="row">
+        
+    </div>
+   
+</div>
+
+    <section class="my-5 o0">.</section>
 
    <!--  <a href="#" class="scroll-top btn-hover hidden-xs">
       <i class="lni lni-chevron-up"></i>
@@ -636,38 +735,14 @@ return false;
         }
       });
     </script>
-
+    <script type="text/javascript">
+        function morebtndown() {
+            $('#morebtndown').toggleClass('lni-rotate-180');
+            $("html, body").animate({
+                    scrollTop: $(
+                      'html, body').get(0).scrollHeight
+                }, 1);
+        }
+    </script>
     </body>
 </html>
-
-<!-- 
-<div class="col-lg-6 col-12">
-            <div class="mydiv mb-3 px-4 pb-2 pt-2 mx-auto">
-                <div class=" card-small-category text-center justify-content-center mb-2">
-                    <small>Champions</small> <img src="assets/images/myimages/leagues/champions_league.png" width="19" class="p-0 m-0"> <small>League</small>
-                </div>
-                <div class="row">
-                    <div class=" col-3 card-small-club-title text-center justify-content-center p-0">
-                        <p class="h6 p-1 m-0 py-auto">Chelsea</p>
-                    </div>
-                    <div class=" col-2 p-0">
-                        <div style="background-image: url('assets/images/myimages/clubs/chelsea.png');" class="card-small-club_logo w-100">
-                        </div>
-                    </div>
-                    <div class=" col-2 text-center p-0">
-                        <p class="py-auto"><small>30 Sep</small></p>
-                        <small class="p-0 m-0">00:00</small>
-                    </div>
-                    <div class=" col-2 p-0">
-                        <div style="background-image: url('assets/images/myimages/clubs/atletico.png');" class="card-small-club_logo w-100">
-                        </div>
-                    </div>
-                    <div class=" col-3 card-small-club-title text-center justify-content-center p-0">
-                        <p class="h6 p-1 m-0 py-auto" >Atletico</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-
-
