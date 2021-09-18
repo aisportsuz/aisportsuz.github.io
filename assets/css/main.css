@@ -2961,8 +2961,41 @@ font-size: 25px;
     border-width: 1px;
     border-color: rgba(0,0,0,0.1);
 }
+.matches-div-collapse{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.1);
+}
 .matches-div-top{
     border-bottom-style: solid;
     border-width: 1px;
     border-color: rgba(0,0,0,0.1);
+}
+.collapse-my{
+    visibility: hidden;
+    height: 1px;
+}
+.top-line-matches{
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.1);
+}
+.my-toast{
+  position: fixed;
+  background-color: #fff;
+  top: 65px;
+  z-index: 101!important;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.05);
+}
+.tty0{
+  transform: translateY(0)!important;
+  transition: .4s;
+}
+.mytoast-header{
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.05);
 }
