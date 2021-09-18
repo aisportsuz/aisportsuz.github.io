@@ -46,7 +46,7 @@
 <div class="my-toast rounded m-3" id="my_toast">
     <div class="mytoast-header d-flex justify-content-between px-3 py-2">
         <p><i class="fa fa-robot lni-lg pe-2 o8 mycolor"></i> aiSports Bot</p>
-        <p><small class="o7"><small>just now </small> </small> <i class="lni lni-lg lni-close ms-2" style="transform: translateY(2px);"></i></p>
+        <p><small class="o7"><small>just now </small> </small> <i class="lni lni-lg lni-close ms-2" onclick="closetoastmy()" style="transform: translateY(2px);"></i></p>
     </div>
     <div class="mytoast-body px-3 py-2">
         <small>In <b class="mycolor"> All </b> section only <a href="#0" class="mycolor fw-bold">main</a> matches are shown.<br>Navigate to a specific championship to watch all fixtures.</small>
@@ -847,7 +847,7 @@ $("#my_toast").fadeOut();
 
     setTimeout(function(){
        $("#my_toast").fadeIn('slow');
-   }, 4000);
+   }, 5000);
 });
     </script>
     <script type="text/javascript">
@@ -889,6 +889,11 @@ $("#my_toast").fadeOut();
             $('#morebtndown_today').toggleClass('lni-rotate-180');
             jQuery("#todayFixtures *").css("position", "initial");
             jQuery("#height_auto").css("height", "initial");
+        }
+    </script>
+    <script type="text/javascript">
+        function closetoastmy() {
+            $("#my_toast").fadeOut();
         }
     </script>
    
